@@ -1,7 +1,7 @@
 #!/bin/bash
 while read oldrev newrev ref
 do
-if [[ $ref =~ .*/master$ ]];
+if [[ $ref =~ .*/main$ ]];
 then
 echo "Master ref received.  Deploying master branch to production..."
 git --work-tree=/var/www/html --git-dir=$HOME/proj checkout -f
