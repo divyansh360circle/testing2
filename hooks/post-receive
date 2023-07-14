@@ -2,6 +2,6 @@
 while read oldrev newrev refname
 do
   echo "something change"
-  git pull origin main
+  # git pull origin main
 done
 
